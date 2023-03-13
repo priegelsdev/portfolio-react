@@ -11,8 +11,8 @@ module.exports = {
         secondary: '#2c2c2c',
       },
       animation: {
-        'fade-in': 'fadeIn 8s ease-out infinite',
-        'fade-out': 'fadeOut 8s ease-in infinite',
+        'fade-in': 'fadeIn 14s ease-out infinite',
+        'fade-out': 'fadeOut 14s ease-in infinite',
       },
       keyframes: {
         fadeIn: {
