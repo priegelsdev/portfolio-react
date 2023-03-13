@@ -29,16 +29,16 @@ export default function About() {
   }, []);
 
   return (
-    <div className="h-full flex flex-col justify-center p-6">
-      <div className="flex flex-col md:flex-row">
-        <div className="h-60 w-44 m-auto relative">
+    <div className="h-full flex flex-col mt-5 md:mt-12 p-6">
+      <div className="flex flex-col md:flex-row md:gap-28 md:mx-auto md:mb-8">
+        <div className="h-60 w-44 m-auto md:h-80 md:w-60 relative">
           <img src={Jack} className="absolute z-10 animate-fade-out" />
           <img src={Jack2} className="absolute animate-fade-in" />
         </div>
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center">
           <h1
             ref={el}
-            className="h-10 text-3xl font-bold text-center drop-shadow-[1px_3px_6px_rgba(0,0,0,0.5)] mt-4"
+            className="h-10 text-3xl font-bold text-center drop-shadow-[1px_3px_6px_rgba(0,0,0,0.5)] mt-4 md:mt-0"
           ></h1>
           <ul className="text-center leading-tight mt-4">
             <li>⚕️ speech therapist</li>
@@ -55,7 +55,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-3 font-medium mt-5">
+      <div className="flex flex-wrap justify-center gap-3 text-xs md:text-lg font-medium mt-5 md:mt-auto md:mb-10">
         <span className="bg-gray-300 rounded-sm px-5 py-1.5">HTML</span>
         <span className="bg-gray-300 rounded-sm px-5 py-1.5">CSS</span>
         <span className="bg-gray-300 rounded-sm px-5 py-1.5">JavaScript</span>
