@@ -1,14 +1,19 @@
 import Jack from '../img/Jack.png';
+import Jack2 from '../img/jack2.png';
 
 export default function About() {
   return (
     <div className="h-full flex flex-col justify-center p-6">
       <div className="flex flex-col md:flex-row">
-        <img src={Jack} className="w-2/5 m-auto" />
+        <div className="h-60 w-44 m-auto relative">
+          <img src={Jack} className="absolute z-10 animate-fade-out" />
+          <img src={Jack2} className="absolute animate-fade-in" />
+        </div>
         <div>
-          <h1 className="text-3xl font-bold text-center">
-            Jack of all trades turning Master of{' '}
-            <span className="line-through">n</span>One
+          <h1 className="text-3xl font-bold text-center mt-4 ">
+            <span className="drop-shadow-xl">Jack of all trades</span> <br />
+            turning <br />
+            Master of <span className="line-through">n</span>One
           </h1>
           <ul>
             <li>⚕️ speech therapist</li>
