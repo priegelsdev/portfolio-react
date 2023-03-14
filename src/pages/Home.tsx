@@ -11,7 +11,7 @@ export default function Home() {
       />
       <div>
         <h1 className="text-3xl font-bold text-center md:text-left">
-          Hi, I'm Philipp 🤚
+          Hi, I'm Philipp <p className="inline-block animate-wave">🤚</p>
         </h1>
         <h3 className="text-xl font-bold mb-4">I'm a Frontend Developer.</h3>
         <p className="mb-1">
