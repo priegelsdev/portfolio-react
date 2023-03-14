@@ -6,8 +6,10 @@ import {
   Route,
 } from 'react-router-dom';
 
+// layout component
 import Layout from './Components/Layout';
 
+// pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
