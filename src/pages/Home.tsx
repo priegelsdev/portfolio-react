@@ -1,4 +1,6 @@
 import profileImg from '../img/profilepic.jpeg';
+import LinkedIn from '../img/LI-Logo.png';
+import GitHub from '../img/GitHub_Logo.png';
 
 export default function Home() {
   return (
@@ -18,9 +20,21 @@ export default function Home() {
         <p>
           <span className="text-xl">📧</span> priegelsdev@gmail.com
         </p>
-        <div className="flex gap-4 justify-center mt-4">
-          <p>GitHub</p>
-          <p>LinkedIn</p>
+        <div className="flex gap-4 justify-center items-center mt-4">
+          <a
+            href="https://github.com/priegelsdev"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img src={GitHub} className="w-32 h-12" />
+          </a>
+          <a
+            href="https://linkedin.com/in/philipp-riegels"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img src={LinkedIn} className="w-36 h-9" />
+          </a>
         </div>
       </div>
     </div>
