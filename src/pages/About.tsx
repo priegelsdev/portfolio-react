@@ -29,7 +29,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="h-full flex flex-col mt-5 md:mt-12 p-6">
+    <div className="h-full flex flex-col justify-between mt-5 md:mt-12 p-6">
       <div className="flex flex-col md:flex-row md:gap-28 md:mx-auto md:mb-8">
         <div className="h-60 w-44 m-auto md:h-80 md:w-60 relative">
           <img src={Jack} className="absolute z-10 animate-fade-out" />

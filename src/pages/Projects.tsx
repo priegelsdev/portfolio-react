@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Projects() {
   return (
     <div className="flex bg-primary p-6">
@@ -76,9 +78,12 @@ export default function Projects() {
           </h2>
           <p className="mb-2">Huh...? That's right, click to</p>
           <div>
-            <a className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-1 px-4">
+            <Link
+              to="portfolio"
+              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-1 px-4"
+            >
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
