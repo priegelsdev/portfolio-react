@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Jack from '../img/Jack.png';
-import Jack2 from '../img/jack2.png';
+import Jack from '../img/base.png';
+import Master from '../img/master.png';
 
 import Typed from 'typed.js';
 
@@ -33,7 +33,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row md:gap-28 md:mx-auto md:mb-8">
         <div className="h-60 w-44 m-auto md:h-80 md:w-60 relative">
           <img src={Jack} className="absolute z-10 animate-fade-out" />
-          <img src={Jack2} className="absolute animate-fade-in" />
+          <img src={Master} className="absolute animate-fade-in" />
         </div>
         <div className="flex flex-col justify-center items-center">
           <h1
