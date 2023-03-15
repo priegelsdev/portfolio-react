@@ -1,6 +1,17 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+
 export default function Portfolio() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="h-full flex flex-col bg-primary py-4 px-6">
+    <div
+      className={`flex flex-col py-4 px-6 ${
+        theme === 'light'
+          ? 'bg-primary text-secondary'
+          : 'bg-secondary text-primary'
+      }`}
+    >
       <h1 className="text-3xl font-bold ">A blog entry..? 🤨</h1>
       <h4 className="italic mb-2">March 14, 2023</h4>
       <h3 className="text-sm font-medium mb-2">
@@ -42,7 +53,11 @@ export default function Portfolio() {
       <a
         href="https://priegels.github.io/portfolio-website"
         target="_blank"
-        className="block w-40 text-center bg-secondary text-primary font-semibold rounded-md py-1 m-auto my-5"
+        className={`block w-40 text-center font-semibold rounded-md py-1 m-auto my-5 ${
+          theme === 'light'
+            ? 'bg-secondary text-primary'
+            : 'bg-primary text-secondary'
+        }`}
       >
         Go to portfolio
       </a>
