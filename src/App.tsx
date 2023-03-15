@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,8 +14,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Portfolio from './pages/Portfolio';
+import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
 export default function App() {
+  const { theme } = useContext(ThemeContext);
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
@@ -27,5 +30,9 @@ export default function App() {
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }

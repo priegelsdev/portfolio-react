@@ -7,8 +7,8 @@ export default function Header() {
 
   return (
     <header
-      className={`${
-        theme === 'light'
+      className={`drop-shadow-lg ${
+        theme === 'dark'
           ? 'bg-secondary text-primary'
           : 'bg-primary text-seconday'
       }`}
@@ -21,7 +21,7 @@ export default function Header() {
         </Link>
         <NavLink to="projects">projects</NavLink>
         <button onClick={toggleTheme} className="font-medium">
-          {theme === 'light' ? '🌞' : 'moon'}
+          {theme === 'light' ? '🌞' : '🌝'}
         </button>
       </nav>
     </header>

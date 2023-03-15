@@ -4,20 +4,26 @@ import { useContext } from 'react';
 import Github from '../img/github-mark.png';
 import GithubWhite from '../img/github-mark-white.png';
 import LinkedIn from '../img/linkedin.png';
-import mail from '../img/email-round-solid-icon.png';
+import LinkedInBlack from '../img/linkedin-black.png';
+import mail from '../img/mail-white.png';
+import mailBlack from '../img/mail-black.png';
 
 export default function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="flex justify-center items-center gap-3 bg-secondary text-primary p-4">
+    <div
+      className={`flex justify-center items-center gap-3 p-4 shadow-2xl shadow-black
+      ${theme === 'light' ? 'bg-primary' : 'bg-secondary'}
+    `}
+    >
       <a
         href="https://github.com/priegelsdev"
         target="_blank"
         className="cursor-pointer"
       >
         <img
-          src={theme === 'light' ? GithubWhite : Github}
+          src={theme === 'dark' ? GithubWhite : Github}
           className="aspect-square w-8"
         />
       </a>
@@ -27,12 +33,17 @@ export default function Footer() {
         className="cursor-pointer"
       >
         <img
-          src={theme === 'light' ? LinkedIn : Github}
+          src={theme === 'dark' ? LinkedIn : LinkedInBlack}
           className="aspect-square w-8"
         />
       </a>
       <a href="mailto:priegelsdev@gmail.com">
-        <img src={mail} className="aspect-square w-9" />
+        <img
+          src={theme === 'dark' ? mail : mailBlack}
+          className={`bg-primary aspect-square w-8 ${
+            theme === 'dark' ? 'rounded-full border-2 border-white' : ''
+          }`}
+        />
       </a>
     </div>
   );
