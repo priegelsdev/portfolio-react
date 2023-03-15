@@ -7,11 +7,15 @@ export default function Home() {
     <div className="h-full flex flex-col md:flex-row md:gap-16 items-center md:justify-center mt-20 md:mt-0">
       <img
         src={profileImg}
-        className="w-1/2 md:max-w-xs rounded-full drop-shadow-2xl mb-4"
+        className="w-1/2 md:max-w-xs border-secondary border-[4px] rounded-full drop-shadow-2xl mb-4 "
       />
       <div>
         <h1 className="text-3xl font-bold text-center md:text-left">
-          Hi, I'm Philipp <p className="inline-block animate-wave">🤚</p>
+          Hi, I'm{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
+            Philipp
+          </span>{' '}
+          <p className="inline-block animate-wave">🤚</p>
         </h1>
         <h3 className="text-xl font-bold mb-4">I'm a Frontend Developer.</h3>
         <p className="mb-1">
