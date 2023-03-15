@@ -1,13 +1,23 @@
 import { Link } from 'react-router-dom';
 
-import Trivia from '../img/trivia.png';
-import SkyRides from '../img/skyrides.png';
-import Wordle from '../img/wordle.png';
+import Trivia from '../img/trivia_screen.png';
+import SkyRides from '../img/skyrides_screen.png';
+import Wordle from '../img/wordle_screen.png';
 import Portfolio from '../img/portfolio.png';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 
 export default function Projects() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="flex bg-primary p-6">
+    <div
+      className={`flex p-6 ${
+        theme === 'light'
+          ? 'bg-primary text-secondary'
+          : 'bg-secondary text-primary'
+      }`}
+    >
       <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 m-auto">
         <div className="flex flex-col items-center py-2 px-4">
           <img
@@ -23,14 +33,22 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://trivia-trove.netlify.app"
               target="_blank"
             >
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://github.com/priegelsdev/quiz"
               target="_blank"
             >
@@ -53,14 +71,22 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://skyrides.netlify.app"
               target="_blank"
             >
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://github.com/priegelsdev/sky-rides"
               target="_blank"
             >
@@ -81,14 +107,22 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://copy-wordle.netlify.app"
               target="_blank"
             >
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-0.5 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
               href="https://github.com/priegelsdev/wordle"
               target="_blank"
             >
@@ -109,7 +143,12 @@ export default function Projects() {
           <div>
             <Link
               to="portfolio"
-              className="cursor-pointer bg-secondary text-primary font-semibold rounded-md py-1 px-4"
+              className={`cursor-pointer font-semibold rounded-md py-1 px-4 
+              ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
             >
               Read More
             </Link>

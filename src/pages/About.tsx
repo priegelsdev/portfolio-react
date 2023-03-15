@@ -57,7 +57,7 @@ export default function About() {
           <p className="text-center leading-tight mt-4">
             🎨 <span className="text-[#3685BC] font-bold">Creative</span> at
             heart <br />
-            <span className="font-semibold">here to stay.</span>
+            <span className="font-semibold underline">here to stay.</span>
           </p>
         </div>
       </div>

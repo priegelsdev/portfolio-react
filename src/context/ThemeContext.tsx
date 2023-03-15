@@ -1,13 +1,21 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, ReactNode, useState, useEffect } from 'react';
+
+type ThemeProviderProps = {
+  children: ReactNode;
+};
+
+type ThemeOption = 'light' | 'dark';
 
 export const ThemeContext = createContext({
   theme: 'light',
   toggleTheme: () => {},
 });
 
-export const ThemeProvider = ({ children }: any) => {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   // set state and default to light theme
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState<string>(
+    (localStorage.getItem('theme') as ThemeOption) || 'light'
+  );
 
   function toggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
