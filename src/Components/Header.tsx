@@ -14,13 +14,37 @@ export default function Header() {
       }`}
     >
       <nav className="flex justify-around items-center font-bold py-2 md:py-9 mx-2 md:mx-20 lg:mx-60">
-        <NavLink to="/">home</NavLink>
-        <NavLink to="about">about</NavLink>
-        <Link to="/" className="text-3xl">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? 'underline text-lg' : 'hover:animate-float'
+          }
+        >
+          home
+        </NavLink>
+        <NavLink
+          to="about"
+          className={({ isActive }) =>
+            isActive ? 'underline text-lg' : 'hover:animate-float'
+          }
+        >
+          about
+        </NavLink>
+        <Link to="/" className="text-3xl hover:animate-float">
           PhR
         </Link>
-        <NavLink to="projects">projects</NavLink>
-        <button onClick={toggleTheme} className="font-medium">
+        <NavLink
+          to="projects"
+          className={({ isActive }) =>
+            isActive ? 'underline text-lg' : 'hover:animate-float'
+          }
+        >
+          projects
+        </NavLink>
+        <button
+          onClick={toggleTheme}
+          className="font-medium hover:animate-float"
+        >
           {theme === 'light' ? '🌞' : '🌝'}
         </button>
       </nav>

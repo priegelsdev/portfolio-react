@@ -11,11 +11,17 @@ module.exports = {
         secondary: '#2c2c2c',
       },
       animation: {
+        float: 'float 0.8s',
         wave: 'wave 2s infinite',
         'fade-in': 'fadeIn 14s ease-out infinite',
         'fade-out': 'fadeOut 14s ease-in infinite',
       },
       keyframes: {
+        float: {
+          '0%': { transform: 'translate(0, 0px)' },
+          '50%': { transform: 'translate(0, -3px)' },
+          '100%': { transform: 'translate(0, 0px)' },
+        },
         wave: {
           '0%': {
             transform: 'rotate(0deg)',
