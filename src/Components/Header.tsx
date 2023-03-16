@@ -17,7 +17,11 @@ export default function Header() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? 'underline text-lg' : 'hover:animate-float'
+            isActive
+              ? `text-lg bg-gradient-to-r bg-[length:100%_3px] bg-bottom bg-no-repeat to-blue-400 ${
+                  theme === 'light' ? 'from-secondary' : 'from-primary'
+                }`
+              : 'hover:animate-float'
           }
         >
           home
@@ -25,7 +29,11 @@ export default function Header() {
         <NavLink
           to="about"
           className={({ isActive }) =>
-            isActive ? 'underline text-lg' : 'hover:animate-float'
+            isActive
+              ? `text-lg bg-gradient-to-r bg-[length:100%_3px] bg-bottom bg-no-repeat to-blue-400 ${
+                  theme === 'light' ? 'from-secondary' : 'from-primary'
+                }`
+              : 'hover:animate-float'
           }
         >
           about
@@ -36,7 +44,11 @@ export default function Header() {
         <NavLink
           to="projects"
           className={({ isActive }) =>
-            isActive ? 'underline text-lg' : 'hover:animate-float'
+            isActive
+              ? `text-lg bg-gradient-to-r bg-[length:100%_3px] bg-bottom bg-no-repeat to-blue-400 ${
+                  theme === 'light' ? 'from-secondary' : 'from-primary'
+                }`
+              : 'hover:animate-float'
           }
         >
           projects
