@@ -20,7 +20,7 @@ export default function Portfolio() {
     <>
       <ScrollToTop />
       <div
-        className={`flex flex-col py-4 px-6 ${
+        className={`md:h-full flex flex-col py-4 px-6 ${
           theme === 'light'
             ? 'bg-primary text-secondary'
             : 'bg-secondary text-primary'
