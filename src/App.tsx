@@ -1,9 +1,10 @@
-import { useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
   Route,
+  useLocation,
 } from 'react-router-dom';
 
 // layout component
@@ -17,6 +18,7 @@ import Portfolio from './pages/Portfolio';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
 export default function App() {
+  // color mode
   const { theme } = useContext(ThemeContext);
 
   const router = createBrowserRouter(
