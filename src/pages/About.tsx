@@ -88,7 +88,7 @@ export default function About() {
             theme === 'light' ? 'bg-gray-300' : 'bg-gray-400 text-secondary'
           } rounded-sm px-5 py-1.5`}
         >
-          React
+          React JS
         </span>
         <span
           className={`${
