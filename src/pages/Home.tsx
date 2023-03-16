@@ -34,9 +34,9 @@ export default function Home() {
         <p className="mb-1">
           <span className="text-xl">🌎</span> Hanover, Germany
         </p>
-        <p>
-          <span className="text-xl">📧</span> priegelsdev@gmail.com
-        </p>
+        <a href="mailto:priegelsdev@gmail.com">
+          <span className="text-xl">📧</span> Get in touch!
+        </a>
         <div className="flex gap-4 justify-center items-center mt-4">
           <a
             href="https://github.com/priegelsdev"

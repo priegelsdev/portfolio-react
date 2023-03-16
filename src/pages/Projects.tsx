@@ -33,7 +33,7 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -44,7 +44,7 @@ export default function Projects() {
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -71,7 +71,7 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -82,7 +82,7 @@ export default function Projects() {
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -107,7 +107,7 @@ export default function Projects() {
           </p>
           <div className="flex gap-2">
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -118,7 +118,7 @@ export default function Projects() {
               <span className="font-medium">💿</span> Demo
             </a>
             <a
-              className={`cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
@@ -143,7 +143,7 @@ export default function Projects() {
           <div>
             <Link
               to="portfolio"
-              className={`cursor-pointer font-semibold rounded-md py-1 px-4 
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-1 px-4 
               ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'

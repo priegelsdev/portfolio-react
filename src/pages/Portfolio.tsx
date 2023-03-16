@@ -68,7 +68,7 @@ export default function Portfolio() {
         <a
           href="https://priegels.github.io/portfolio-website"
           target="_blank"
-          className={`block w-40 text-center font-semibold rounded-md py-1 m-auto my-5 ${
+          className={`hover:bg-blue-400 block w-40 text-center font-semibold rounded-md py-1 m-auto my-5 ${
             theme === 'light'
               ? 'bg-secondary text-primary'
               : 'bg-primary text-secondary'
