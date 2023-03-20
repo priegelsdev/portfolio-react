@@ -55,7 +55,7 @@ export default function Header() {
         </NavLink>
         <button
           onClick={toggleTheme}
-          className="font-medium hover:animate-float"
+          className="font-medium text-lg md:text-xl hover:animate-float"
         >
           {theme === 'light' ? '🌞' : '🌝'}
         </button>
