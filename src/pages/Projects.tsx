@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Trivia from '../img/trivia_screen.png';
 import SkyRides from '../img/skyrides_screen.png';
 import Wordle from '../img/wordle_screen.png';
-import Portfolio from '../img/portfolio.png';
+import SpaceRpg from '../img/space-rpg-screen.png';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -133,25 +133,37 @@ export default function Projects() {
         <div className="flex flex-col items-center py-2 px-4">
           <img
             className="mb-2 drop-shadow-lg "
-            src={Portfolio}
+            src={SpaceRpg}
             alt="picture of project"
           />
-          <h2 className="text-xl font-bold mb-2">
-            Portfolio of Philipp Riegels
-          </h2>
-          <p className="mb-2">Huh...? That's right, click to</p>
-          <div>
-            <Link
-              to="portfolio"
-              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-1 px-4 
-              ${
+          <h2 className="text-xl font-bold mb-2">Space RPG</h2>
+          <p className="mb-2">
+            A simple project created with plain JavaScript, HTML and CSS. The
+            pictrues were AI generated to fit the space theme.
+          </p>
+          <div className="flex gap-2">
+            <a
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
                 theme === 'light'
                   ? 'bg-secondary text-primary'
                   : 'bg-primary text-secondary'
               }`}
+              href="https://space-rpg.netlify.app"
+              target="_blank"
             >
-              Read More
-            </Link>
+              <span className="font-medium">💿</span> Demo
+            </a>
+            <a
+              className={`hover:bg-blue-400 cursor-pointer font-semibold rounded-md py-0.5 px-4 ${
+                theme === 'light'
+                  ? 'bg-secondary text-primary'
+                  : 'bg-primary text-secondary'
+              }`}
+              href="https://github.com/priegelsdev/space-rpg"
+              target="_blank"
+            >
+              <span className="font-medium">{`</>`}</span> Code
+            </a>
           </div>
         </div>
       </div>
