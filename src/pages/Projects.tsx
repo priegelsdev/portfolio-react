@@ -139,7 +139,7 @@ export default function Projects() {
           <h2 className="text-xl font-bold mb-2">Space RPG</h2>
           <p className="mb-2">
             A simple project created with plain JavaScript, HTML and CSS. The
-            pictrues were AI generated to fit the space theme.
+            pictures were AI generated to fit the space theme.
           </p>
           <div className="flex gap-2">
             <a
